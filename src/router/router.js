@@ -1,5 +1,7 @@
 import $ from 'jquery';
-import { oops } from '../views/oops';
+import {
+    oops
+} from '../views/oops';
 
 export class Router {
 
@@ -12,7 +14,9 @@ export class Router {
     mount(outlet) {
         this.outlet = outlet;
         this.body.on('routechange', (event, detail) => {
-            const { path } = detail;
+            const {
+                path
+            } = detail;
             this.navigate(path);
         });
     }
@@ -31,11 +35,13 @@ export class Router {
         return this.get(path) !== undefined;
     }
 
-    navigate(path, data = {}) {
+    async navigate(path, data = {}) {
         if (this.has(path)) {
             // obsluguje istniejaca sciezke
-            const { component } = this.get(path);
-            const html = component();
+            const {
+                component
+            } = this.get(path);
+            const html = await component();
             // renderuje nowy widok wewnatrz elementu "outlet"
             this.outlet.empty().append(html);
         } else {

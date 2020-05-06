@@ -8,7 +8,7 @@ export const nav = () => {
     const fragment = $(new DocumentFragment());
 
     const navBar = $(`
-        <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <nav class="nav navbar navbar-expand navbar-dark bg-dark justify-content-end">
             <span class="navbar-brand">IT SPA</span>
             <ul class="navbar-nav mr-auto"></ul>
         </nav>

@@ -2,6 +2,12 @@
 
 import $ from 'jquery';
 
+
+$(function () {
+    $("#datepicker").datepicker();
+});
+
+
 export const home = () => {
     const fragment = $(new DocumentFragment());
 

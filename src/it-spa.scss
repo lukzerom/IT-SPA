@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-item {
+    cursor: pointer;
+}
+
+
+.card {
+    height: 25vh;
+    width: 80%;
+    margin: 20px auto;
+
+    .card-body {
+        display: flex;
+
+        .picture {
+            width: 20%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .details {
+            padding: 0 1rem;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .price {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+
+        .btn-rooms {}
+    }
+}

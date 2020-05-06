@@ -4,8 +4,8 @@ import $ from 'jquery';
 
 // navItem otrzymuje komplente informacje o danej "ścieżce"
 export const navItem = (route) => {
-    const li = $(`<li></li>`);
-    const a = $(`<a class="text-light">${route.name}</a>`);
+    const li = $(`<li class="nav-item"></li>`);
+    const a = $(`<a class="text-light nav-link">${route.name}</a>`);
 
     a.on('click', (event) => {
         event.preventDefault();

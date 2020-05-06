@@ -3,31 +3,103 @@
   "rooms": [
     {
       "id": 1,
-      "name": "Pokój unarny",
+      "name": "Front Room",
+      "description": "Grid room to prawdziwa gratka dla miłośników designu. Do dyspozycji jest 12 szafek, nic do siebie nie pasuje",
+      "imgURL": "https://pixabay.com/get/54e3dc434b51aa14f6d1867dda35367b1d38dbe254587540_1920.jpg",
       "beds": 1,
       "guests": 1,
-      "price": 170
+      "price": 170,
+      "reservations": []
     },
     {
       "id": 2,
-      "name": "Pokój binarny",
+      "name": "PHP Room",
+      "description": "Pokój dla fanów ceniących klasykę i tradycję",
+      "imgURL": "https://pixabay.com/get/54e0d2464b5ba514f1dc8460da293276123ad6e5565173_640.jpg",
       "beds": 1,
       "guests": 2,
-      "price": 240
+      "price": 240,
+      "reservations": []
     },
     {
       "id": 3,
-      "name": "Pokój trójkowy",
+      "name": "Pokój Światłowodny ",
+      "description": "Pokój świadłowodny to jedalne rozwiązanie dla osób ceniących dobre światło i szybkość",
+      "imgURL": "https://pixabay.com/get/55e1d24b4c54aa14f1dc8460da293276123ad6e5565276_640.jpg",
       "beds": 2,
       "guests": 3,
-      "price": 290
+      "price": 290,
+      "reservations": []
     },
     {
       "id": 4,
-      "name": "Pokój czwórkowy",
+      "name": "Internet",
+      "description": "Internet to idealny pokój dla osób ceniących wszystko",
+      "imgURL": "https://pixabay.com/get/51e6dd474854b10ff3d89960c62d3f791037dee05552_640.jpg",
       "beds": 2,
       "guests": 4,
-      "price": 340
+      "price": 340,
+      "reservations": []
+    },
+    {
+      "id": 5,
+      "name": "Pokój VPN",
+      "description": "Pokój dla ceniących prywatność i spokój. Uwaga - w pokoju brak okien",
+      "imgURL": "https://pixabay.com/get/5ee2dd46435ab10ff3d89960c62d3f791037dee35155_640.jpg",
+      "beds": 1,
+      "guests": 3,
+      "price": 270,
+      "reservations": []
+    },
+    {
+      "id": 6,
+      "name": "Dark Mode",
+      "description": "Pokój wystylizowany na klasyczny motyw Dark Theme + w VS Code ",
+      "imgURL": "https://pixabay.com/get/57e8d34b4f54a514f1dc8460da293276123ad6e5555678_640.jpg",
+      "beds": 2,
+      "guests": 4,
+      "price": 250,
+      "reservations": []
+    },
+    {
+      "id": 7,
+      "name": "Cloud Room",
+      "description": "Cloud to pokój na najwyższym piętrze naszego SPA, najlepszy widok, najwyższa cena",
+      "imgURL": "https://pixabay.com/get/57e6dc474d56aa14f1dc8460da293276123ad6e5545373_640.jpg",
+      "beds": 1,
+      "guests": 2,
+      "price": 1024,
+      "reservations": []
+    },
+    {
+      "id": 8,
+      "name": "Linux",
+      "description": "Pokój dla fanów rozwiązywania problemów",
+      "imgURL": "https://pixabay.com/get/54e2d3475754a809eac58578cf2f32761537d9e0_640.jpg",
+      "beds": 3,
+      "guests": 3,
+      "price": 10,
+      "reservations": []
+    },
+    {
+      "id": 9,
+      "name": "Pokój Kawowy",
+      "description": "Pokój z ekspresem ciśnienowym, dla fanów nocnego programowania",
+      "imgURL": "https://pixabay.com/get/54e3d14a4d53ad14f1dc8460da293276123ad6e55a5379_640.jpg",
+      "beds": 5,
+      "guests": 10,
+      "price": 120,
+      "reservations": []
+    },
+    {
+      "id": 10,
+      "name": "Pokój Hackaton",
+      "description": "Idealny pokój dla grupy osób którze wcale nie zamierzają spać",
+      "imgURL": "https://pixabay.com/get/57e2d1464d55aa14f1dc8460da293276123ad6e4535174_640.jpg",
+      "beds": 1,
+      "guests": 7,
+      "price": 210,
+      "reservations": []
     }
   ],
   "treatments": [
@@ -82,4 +154,3 @@
     }
   ]
 }
- 
