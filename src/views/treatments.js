@@ -27,7 +27,7 @@ let quantity = "1"
 //Funkcja pobierająca zabiegi 
 const getTreatments = async () => {
 
-    let treatmentsDB = axios.get('http://localhost:3000/treatments')
+    let treatmentsDB = axios.get('https://my-json-server.typicode.com/lukzerom/IT-SPA/treatments')
         .then(resp => {
             let treatments = resp.data;
             return treatments

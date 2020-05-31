@@ -3,6 +3,7 @@
 import $ from 'jquery';
 import Cart from "../cart/cart"
 import axios from 'axios'
+let cart = new Cart
 
 //Modal pożegnalny po potwierdzeniu koszyka
 const modalConfirm = `<div class="modal fade" id="modal-confirm" tabindex="-1" role="dialog"
@@ -59,7 +60,7 @@ const calculateDays = (dateFrom, dateTo) => {
 
 //Funkcja licząca całkowitą kwotę do koszyka
 const calculateFullPrice = async () => {
-  let cart = new Cart
+
   let cartContent = cart.getItSpaCart()
   let sum = 0
   let roomsDB = await getRooms()
@@ -85,7 +86,6 @@ const calculateFullPrice = async () => {
 //Koszyk
 export const bookings = async () => {
 
-  let cart = new Cart
   let cartContent = cart.getItSpaCart()
   const fragment = $(new DocumentFragment());
   let roomsDB = await getRooms()
@@ -164,6 +164,15 @@ export const bookings = async () => {
   }
 
 
+  const confirmOrder = async () => {
+    cart.setItSpaCart([])
+    $("#treatmentsRows").empty()
+    $("#roomsRows").empty()
+    $("#fullprice").empty()
+    $("#fullprice").append(`Suma ${await calculateFullPrice()} zł`)
+  }
+
+
   //Komponent koszyka z funkcjami zwracającymi wierszę i sumę wszystkich zamówień
   const bookingCart = $(`
   <div class="card-container">
@@ -184,7 +193,7 @@ export const bookings = async () => {
             <th scope="col ">Usuń</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="roomsRows">
         ${fillRooms()}
     </tbody>
 </table>
@@ -200,7 +209,7 @@ export const bookings = async () => {
             <th scope="col text-center">Usuń</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="treatmentsRows">
         ${fillTreatments()}
     </tbody>
 </table>
@@ -214,6 +223,7 @@ export const bookings = async () => {
   //"Event listnery" na usuwanie elementów
   bookingCart.find('#deleteRoom').click(deleteRoom)
   bookingCart.find('#deleteTreatment').click(deleteTreatment)
+  bookingCart.find('#confirm').click(confirmOrder)
 
 
   fragment.append(bookingCart).append(modalConfirm)

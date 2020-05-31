@@ -35,7 +35,7 @@ const roomToast = `<div aria-live="polite" aria-atomic="true" style="position: r
 //Funkcja pobierająca pokoje z bazy danych 
 const getRooms = async () => {
 
-  let roomsDB = axios.get('http://localhost:3000/rooms')
+  let roomsDB = axios.get('https://my-json-server.typicode.com/lukzerom/IT-SPA/rooms')
     .then(resp => {
       let rooms = resp.data;
       return rooms
