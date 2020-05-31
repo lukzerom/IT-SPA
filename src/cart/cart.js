@@ -1,6 +1,6 @@
 // cart.js
 
-export class Cart {
+export default class Cart {
 
     constructor() {
         this.key = 'IT_SPA_CART';
@@ -44,12 +44,14 @@ export class Cart {
         // usuwa produkt z koszyka
         const cartValue = this.getItSpaCart();
         const itemInCart = cartValue.findIndex(
-                                val => val.name === item.name
-                            );
+            val => val.name === item.name
+        );
 
         if (itemInCart !== -1) {
             cartValue.splice(itemInCart, 1);
             this.setItSpaCart(cartValue);
         }
     }
+
+
 }

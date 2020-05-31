@@ -13,10 +13,16 @@ export class Router {
 
     mount(outlet) {
         this.outlet = outlet;
+        $(window).on('hashchange', function () {
+            console.log("dziala")
+        })
+
         this.body.on('routechange', (event, detail) => {
             const {
                 path
             } = detail;
+
+
             this.navigate(path);
         });
     }

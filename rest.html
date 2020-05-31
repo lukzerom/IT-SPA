@@ -1,0 +1,26 @@
+<tr scope="row" id="row-${room.roomId}">
+    <td> $ {
+        roomDB.name
+        } </td>
+    <td>
+        <input data - price="${roomDB.price}" type="date" id="dateFrom-${room.roomId}" name="trip-start" disabled
+            min="${today()}" value="${room.dateFrom}" />
+    </td>
+    <td>
+        <input data - price="${roomDB.price}" type="date" id="dateTo-${room.roomId}" name="trip-end" disabled
+            min="${today()}" value="${room.dateTo}" />
+    </td>
+    <td> $ {
+        calculateDays(room.dateFrom, room.dateTo)
+        } </td>
+    <td> $ {
+        roomDB.price
+        } </td>
+    <td> $ {
+        calculateDays(room.dateFrom, room.dateTo) * roomDB.price
+        }
+        zł </td>
+    <td class="text-center">
+        <i id="deleteRoom" data - name="${room.roomId}" class="fas fa-minus-circle text-danger float-right">
+        </i> </td>
+</tr>

@@ -1,28 +1,32 @@
 // odwolujac sie do katalogu z "beczka" (index.js -- barrel)
 // mozna pisac krotsze importy
-import { home, rooms, treatments, bookings } from '../views';
+import {
+    home,
+    rooms,
+    treatments,
+    bookings
+} from '../views';
 
-export const routes = [
-    {
-        name: 'Home',
+export const routes = [{
+        name: 'O nas',
         path: '/',
         component: home,
         data: {}
     },
     {
-        name: 'Rooms',
+        name: 'Pokoje',
         path: '/rooms',
         component: rooms,
         data: {}
     },
     {
-        name: 'Treatments',
+        name: 'Zabiegi',
         path: '/treatments',
         component: treatments,
         data: {}
     },
     {
-        name: 'Bookings',
+        name: 'Koszyk',
         path: '/bookings',
         component: bookings,
         data: {}
