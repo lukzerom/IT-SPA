@@ -1,0 +1,171 @@
+{
+  "users": [],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Front Room",
+      "description": "Grid room to prawdziwa gratka dla miłośników designu. Do dyspozycji jest 12 szafek, nic do siebie nie pasuje",
+      "imgURL": "http://lukzerom.ovh/itspa/front.jpg",
+      "beds": 1,
+      "guests": 1,
+      "price": 170,
+      "reservations": []
+    },
+    {
+      "id": 2,
+      "name": "PHP Room",
+      "description": "Pokój dla fanów ceniących klasykę i tradycję",
+      "imgURL": "http://lukzerom.ovh/itspa/php.jpg",
+      "beds": 1,
+      "guests": 2,
+      "price": 240,
+      "reservations": []
+    },
+    {
+      "id": 3,
+      "name": "Pokój Światłowodny ",
+      "description": "Pokój świadłowodny to jedalne rozwiązanie dla osób ceniących dobre światło i szybkość",
+      "imgURL": "http://lukzerom.ovh/itspa/swiatlo.jpg",
+      "beds": 2,
+      "guests": 3,
+      "price": 290,
+      "reservations": []
+    },
+    {
+      "id": 4,
+      "name": "Internet",
+      "description": "Internet to idealny pokój dla osób ceniących wszystko",
+      "imgURL": "http://lukzerom.ovh/itspa/internet.jpg",
+      "beds": 2,
+      "guests": 4,
+      "price": 340,
+      "reservations": []
+    },
+    {
+      "id": 5,
+      "name": "Pokój VPN",
+      "description": "Pokój dla ceniących prywatność i spokój. Uwaga - w pokoju brak okien",
+      "imgURL": "http://lukzerom.ovh/itspa/vpn.jpg",
+      "beds": 1,
+      "guests": 3,
+      "price": 270,
+      "reservations": []
+    },
+    {
+      "id": 6,
+      "name": "Dark Mode",
+      "description": "Pokój wystylizowany na klasyczny motyw Dark Theme + w VS Code ",
+      "imgURL": "http://lukzerom.ovh/itspa/dark%20mode.jpg",
+      "beds": 2,
+      "guests": 4,
+      "price": 250,
+      "reservations": []
+    },
+    {
+      "id": 7,
+      "name": "Cloud Room",
+      "description": "Cloud to pokój na najwyższym piętrze naszego SPA, najlepszy widok, najwyższa cena",
+      "imgURL": "http://lukzerom.ovh/itspa/cloud.jpg",
+      "beds": 1,
+      "guests": 2,
+      "price": 1024,
+      "reservations": []
+    },
+    {
+      "id": 8,
+      "name": "Linux",
+      "description": "Pokój dla fanów rozwiązywania problemów",
+      "imgURL": "http://lukzerom.ovh/itspa/linux.jpg",
+      "beds": 3,
+      "guests": 3,
+      "price": 10,
+      "reservations": []
+    },
+    {
+      "id": 9,
+      "name": "Pokój Kawowy",
+      "description": "Pokój z ekspresem ciśnienowym, dla fanów nocnego programowania",
+      "imgURL": "http://lukzerom.ovh/itspa/coffee.jpg",
+      "beds": 4,
+      "guests": 6,
+      "price": 120,
+      "reservations": []
+    },
+    {
+      "id": 10,
+      "name": "Pokój Hackaton",
+      "description": "Idealny pokój dla grupy osób którze wcale nie zamierzają spać",
+      "imgURL": "http://lukzerom.ovh/itspa/hackaton.jpg",
+      "beds": 1,
+      "guests": 7,
+      "price": 210,
+      "reservations": []
+    }
+  ],
+  "treatments": [
+    {
+      "id": 1,
+      "name": "Masaż ciepłym monitorem",
+      "area": "back",
+      "time": 30,
+      "price": 80,
+      "imgURL": "http://lukzerom.ovh/itspa/monitor.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Biczowanie kablem od myszy",
+      "area": "back",
+      "time": 20,
+      "price": 70,
+      "imgURL": "http://lukzerom.ovh/itspa/kabel.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Peeling odłamkami płyty CD",
+      "area": "face",
+      "time": 15,
+      "price": 50,
+      "imgURL": "http://lukzerom.ovh/itspa/cd.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Pedicure woskiem z USB",
+      "area": "legs",
+      "time": 25,
+      "price": 100,
+      "imgURL": "http://lukzerom.ovh/itspa/usb.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Manicure analogowo-cyfrowy",
+      "area": "hands",
+      "time": 45,
+      "price": 150,
+      "imgURL": "http://lukzerom.ovh/itspa/analog.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Kąpiel w gorącej kawie",
+      "area": "body",
+      "time": 60,
+      "price": 200,
+      "imgURL": "http://lukzerom.ovh/itspa/bath.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Depilacja dyskiem twardym",
+      "area": "body",
+      "time": 45,
+      "price": 120,
+      "imgURL": "http://lukzerom.ovh/itspa/dysk.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Sauna 5G 200% mocy",
+      "area": "body",
+      "time": 45,
+      "price": 120,
+      "imgURL": "http://lukzerom.ovh/itspa/sauna.jpg"
+    }
+  ]
+}
