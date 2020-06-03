@@ -27,6 +27,12 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
     </div>
 </div>
 </div>`
+const alert = `<div class="alert alert-warning alert-dismissible fade show text-center " role="alert">
+Nie masz nic w koszyku <button type="button"
+    class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>`
 
 
 //Funkcja zwracająca obecny dzień
@@ -38,7 +44,7 @@ const today = () => {
 //Funkcja pobierająca pokoje z serwera 
 const getRooms = async () => {
 
-  let roomsDB = axios.get('http://localhost:3000/rooms')
+  let roomsDB = axios.get('https://my-json-server.typicode.com/lukzerom/IT-SPA/rooms')
     .then(resp => {
       let rooms = resp.data;
       return rooms
@@ -165,12 +171,21 @@ export const bookings = async () => {
 
 
   const confirmOrder = async () => {
-    cart.setItSpaCart([])
-    $("#treatmentsRows").empty()
-    $("#roomsRows").empty()
-    $("#fullprice").empty()
-    $("#fullprice").append(`Suma ${await calculateFullPrice()} zł`)
+
+    if (cart.getItSpaCart().length <= 0) {
+      return $("body").append(alert)
+    } else {
+      cart.setItSpaCart([])
+      $("#treatmentsRows").empty()
+      $("#roomsRows").empty()
+      $("#fullprice").empty()
+      $("#fullprice").append(`Suma ${await calculateFullPrice()} zł`)
+      $('#modal-confirm').modal("show")
+    }
   }
+
+
+
 
 
   //Komponent koszyka z funkcjami zwracającymi wierszę i sumę wszystkich zamówień
@@ -215,8 +230,8 @@ export const bookings = async () => {
 </table>
     
     <div class="cartListFooter d-flex justify-content-between">
-    <button data-toggle="modal"
-    data-target="#modal-confirm" id="confirm" type="button" class="btn btn-success">Potwierdź zamówienie</button>
+    <button 
+   id="confirm" type="button" class="btn btn-success">Potwierdź zamówienie</button>
     <strong class="align-self-center" id="fullprice">Suma ${await calculateFullPrice()} zł</strong>
     </div></div></div>`);
 
