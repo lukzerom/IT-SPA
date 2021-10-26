@@ -22,7 +22,7 @@
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.1",
-    "jquery-ui": "^1.12.1",
+    "jquery-ui": "^1.13.0",
     "popper": "^1.0.1"
   }
 }
